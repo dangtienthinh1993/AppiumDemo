@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Login Test Suite" verbose="2" thread-count="3">
+    <listeners>
+        <listener class-name="listener.Listener"/>
+    </listeners>
+	<parameter name="username" value="qa2pl2"/>  
+	<parameter name="password" value="Pal332211"/>
+    <parameter name="url" value="https://www.fair999.com/x"/>
+    <test name="Login Tests">
+        <groups>
+            <run>
+                <include name = "member">
+                </include>
+            </run>
+        </groups>
+        <classes preserve-order="true">
+<!--            <class name="LoginTest"/>-->
+            <class name="HomePageTest"/>
+        </classes>
+    </test>
+</suite>

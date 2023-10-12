@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Login Test Suite" verbose="2" thread-count="3">
+    <listeners>
+        <listener class-name="listener.Listener"/>
+    </listeners>
+	<parameter name="username" value="fbsubqa"/>
+	<parameter name="password" value="Pal332211"/>
+    <parameter name="url" value="https://www.fair999.com/agent"/>
+    <test name="Login Tests">
+        <groups>
+            <run>
+                <include name = "agent">
+                </include>
+            </run>
+        </groups>
+        <classes preserve-order="true">
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+</suite>
